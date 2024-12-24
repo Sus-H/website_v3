@@ -2,27 +2,29 @@ import type { MetaFunction } from "@remix-run/node";
 import { Outlet } from "@remix-run/react";
 import { NavButton } from "lib/components/nav-button";
 import { BsStars } from "react-icons/bs";
-import { DropDownMenu } from "lib/components/dropdown";
+import { NavScrollButton } from "lib/components/nav-scroll-button";
+import { ScrollLink } from "react-scroll";
+
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Susanne" },
-    { name: "description", content: "Welcome to Remix (SPA Mode)!" },
+    { name: "description", content: "Welcome to my portfolio!" },
   ];
 };
 
 export default function Main() {
   return (
-    <div className="flex flex-wrap items-center justify-center bg-zinc-800 text-gray-200 font-mono">
-      <div className="bg-pink-800 sticky top-0 z-10 py-5 font-bold w-screen">
+    <div className="flex flex-wrap items-center justify-center font-inter">
+      <div className="bg-[url('/images/pink-clouds-bg-40.png')] bg-cover bg-center sticky top-0 z-10 py-5 font-bold w-screen">
         <div className=" text-white gap-5 flex justify-center">
           <div>
             <NavButton to="/"><img src="/images/kirbypixelstar_trans2.png" alt="" className="w-7"/></NavButton>
           </div>
-          {/* <DropDownMenu></DropDownMenu> */}
           <NavButton to="/">Home</NavButton>
-          <NavButton to="/projects">Projects</NavButton>
-          <NavButton to="/timeline">Timeline</NavButton>
-          <NavButton to="/mealPrep">My Meal Preps</NavButton>
+          <NavScrollButton to="/" target="">Portfolio</NavScrollButton>
+          <NavScrollButton to="/" target="">Academic Journey</NavScrollButton>
+          <NavScrollButton to="/" target="">Gallery</NavScrollButton>
         </div>
       </div>
       <div className="max-w-4xl">
@@ -36,7 +38,7 @@ export default function Main() {
           <Outlet></Outlet>
         </div>
         <footer>
-          <p className="text-center text-xs"> © Meep {":)"} 2024</p>
+          <p className="text-center text-xs"> © Susanne On Huang {":)"} 2024</p>
         </footer>
       </div>
     </div>
