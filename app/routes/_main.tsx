@@ -1,9 +1,8 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Outlet } from "@remix-run/react";
+
 import { BsStars } from "react-icons/bs";
 import { NavBar } from "lib/components/nav-bar";
-
-
 
 
 export const meta: MetaFunction = () => {
