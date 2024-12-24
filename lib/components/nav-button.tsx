@@ -1,0 +1,11 @@
+import { Link } from "@remix-run/react";
+
+interface Props{
+    to: string
+    target?: string
+    children?: React.ReactNode
+}
+
+export function NavButton({to,target, children}:Props){
+    return <Link className="text no-underline hover:underline" to={to} target={target}>{children}</Link>
+}
