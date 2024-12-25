@@ -2,7 +2,7 @@ import TimeLineTile from "./time-line.tile"
 
 export function FoundationalYear(){
     return <div>
-        <div className="flex justify-center border-4 border-black rounded-lg p-20">
+        <div className="bg-white grid sm:flex justify-center border-4 border-black rounded-lg p-20">
             <ol className="relative border-s border-black dark:black">
                 <TimeLineTile date="HT 2018 - VT 2019">
                     <ol>

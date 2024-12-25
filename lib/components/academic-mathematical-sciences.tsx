@@ -2,7 +2,7 @@ import TimeLineTile from "./time-line.tile"
 
 export function AcademicMathematicalSciences(){
     return <div>
-        <div className="flex justify-center border-4 border-indigo-800 rounded-lg p-20">
+        <div className="bg-white grid sm:flex justify-center border-4 border-indigo-800 rounded-lg p-20">
             <ol className="relative border-s border-black dark:black">
                 <TimeLineTile date="HT 2019">
                         <ol>

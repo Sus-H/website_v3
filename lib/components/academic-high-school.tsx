@@ -3,7 +3,7 @@ import TimeLineTile from "./time-line.tile";
 export function HighSchool() {
   return (
     <div>
-        <div className="border-4 border-yellow-300 rounded-lg p-20">
+        <div className="bg-white grid border-4 border-yellow-300 rounded-lg p-20">
             <ol className="relative border-s border-black dark:black">
                 <TimeLineTile>
                     <ol>

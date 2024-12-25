@@ -1,7 +1,7 @@
 import TimeLineTile from "./time-line.tile";
 
 export function AcademicInteractionDesign() {
-    return <div className="grid grid-cols-3">
+    return <div className="grid sm:grid-cols-3">
             <ol className="relative border-s border-black dark:black">
                 <TimeLineTile date="HT 2023">
                     <ol>

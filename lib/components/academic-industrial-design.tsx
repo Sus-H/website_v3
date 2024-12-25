@@ -2,7 +2,7 @@ import TimeLineTile from "./time-line.tile";
 
 export function AcademicIndustrialDesign() {
     return (
-        <div className="grid grid-cols-3">
+        <div className="grid sm:grid-cols-3">
             <div>
                 <ol className="relative border-s border-black dark:black">
                     <TimeLineTile date="HT 2020">
@@ -67,7 +67,7 @@ export function AcademicIndustrialDesign() {
                     </ol>
                 </TimeLineTile>
                 <TimeLineTile date="SUMMER 2023">
-                    Summer Course in Note Writing - MUHG47 {"(Lund University, Remote)"}
+                    Summer Course in Music Note Writing - MUHG47 {"(Lund University, Remote)"}
                 </TimeLineTile>
             </ol>
         </div>
