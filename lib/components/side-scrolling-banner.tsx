@@ -25,7 +25,7 @@ const keyframes = `
 
 export function SideScrollingBanner() {
   return (
-    <div style={scrollingBannerStyle} className="py-2">
+    <div style={scrollingBannerStyle} className="py-20">
       <style>{keyframes}</style>
       <div style={scrollingBannerContentStyle} className="text-6xl font-inter font-extralightlight italic text-black">
         <span className="inline-block px-4">UX</span>
