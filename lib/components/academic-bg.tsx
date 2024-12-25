@@ -1,6 +1,9 @@
 import TimeLineTile from "./time-line.tile";
 import { AcademicInteractionDesign } from "./academic-interaction-design";
 import { AcademicIndustrialDesign } from "./academic-industrial-design";
+import { AcademicMathematicalSciences } from "./academic-mathematical-sciences";
+import { FoundationalYear } from "./academic-foundation-year";
+import { HighSchool } from "./academic-high-school";
 
 export function AcademicBg() {
   return (
@@ -12,6 +15,15 @@ export function AcademicBg() {
                 </div>
                 <div className="p-10">
                     <AcademicIndustrialDesign></AcademicIndustrialDesign>
+                </div>
+                <div className="p-10">
+                    <AcademicMathematicalSciences></AcademicMathematicalSciences>
+                </div>
+                <div className="p-10">
+                    <FoundationalYear></FoundationalYear>
+                </div>
+                <div className="p-10">
+                    <HighSchool></HighSchool>
                 </div>
             </div>
         </div>

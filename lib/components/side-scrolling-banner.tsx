@@ -27,25 +27,34 @@ export function SideScrollingBanner() {
   return (
     <div style={scrollingBannerStyle} className="py-2">
       <style>{keyframes}</style>
-      <div style={scrollingBannerContentStyle} className="text-2xl font-inter font-light italic text-black">
+      <div style={scrollingBannerContentStyle} className="text-6xl font-inter font-extralightlight italic text-black">
         <span className="inline-block px-4">UX</span>
         <span className="inline-block px-4">USABILITY</span>
         <span className="inline-block pl-4 pr-1">PRODUCT</span>
         <span className="inline-block pr-4 pl-1">DEVELOPMENT</span>
+        <span className="inline-block pl-4 pr-1">INTERACTION</span>
+        <span className="inline-block pr-4 pl-1">DESIGN</span>
         <span className="inline-block px-4">UX</span>
         <span className="inline-block px-4">USABILITY</span>
         <span className="inline-block pl-4 pr-1">PRODUCT</span>
         <span className="inline-block pr-4 pl-1">DEVELOPMENT</span>
+        <span className="inline-block pl-4 pr-1">INTERACTION</span>
+        <span className="inline-block pr-4 pl-1">DESIGN</span>
+        
       </div>
-      <div style={scrollingBannerContentStyle} className="text-2xl font-inter font-light italic text-black">
+      <div style={scrollingBannerContentStyle} className="text-6xl font-inter font-extralight italic text-black">
         <span className="inline-block px-4">UX</span>
         <span className="inline-block px-4">USABILITY</span>
         <span className="inline-block pl-4 pr-1">PRODUCT</span>
         <span className="inline-block pr-4 pl-1">DEVELOPMENT</span>
+        <span className="inline-block pl-4 pr-1">INTERACTION</span>
+        <span className="inline-block pr-4 pl-1">DESIGN</span>
         <span className="inline-block px-4">UX</span>
         <span className="inline-block px-4">USABILITY</span>
         <span className="inline-block pl-4 pr-1">PRODUCT</span>
         <span className="inline-block pr-4 pl-1">DEVELOPMENT</span>
+        <span className="inline-block pl-4 pr-1">INTERACTION</span>
+        <span className="inline-block pr-4 pl-1">DESIGN</span>
       </div>
     </div>
   );
