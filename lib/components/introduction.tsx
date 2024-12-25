@@ -9,7 +9,7 @@ interface Head2Props {
 
 export function Introduction({ children }: Head2Props) {
   return <div>
-        <div className="flex grid-cols-2 justify-center gap-20">
+        <div className="flex grid-cols-2 justify-center gap-20 pb-20">
             <div className="w-2/5 space-y-10">
                 <p className="text-6xl">Susanne On Huang</p>
                 <p>Hello! My name's Susanne and I'm an energetic, outgoing and curious  student! I'm open minded and try to create mutual understanding in my  
