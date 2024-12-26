@@ -11,11 +11,11 @@ interface Props{
 export default function TimeLineTile({title, date, description, description1, children}: Props){
     return <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black dark:border-black dark:bg-black"></div>
-                <time className="mb-1 font-bold leading-none">{date}</time>
+                <time className="mb-1 font-bold text-xs leading-none">{date}</time>
                 <h3 className="font-semibold">{title}</h3>
-                <p className="mb-4 text-sm font-normal">{description}</p>
-                <p className="mb-4 text-sm font-normal">{description1}</p>
-                <p className="mb-4 text-sm font-normal">{children}</p>
+                <p className="mb-4 text-xs font-normal">{description}</p>
+                <p className="mb-4 text-xs font-normal">{description1}</p>
+                <p className="mb-4 text-xs font-normal">{children}</p>
             </li>
 }
 

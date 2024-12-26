@@ -4,7 +4,7 @@ export function AcademicMathematicalSciences(){
     return <div>
         <div className="bg-white grid sm:flex justify-center border-4 border-indigo-800 rounded-lg p-20">
             <ol className="relative border-s border-black dark:black">
-                <TimeLineTile date="HT 2019">
+                <TimeLineTile date="FALL TERM 2019">
                         <ol>
                             <li>
                                 Mathematics I - MMG200
@@ -14,7 +14,7 @@ export function AcademicMathematicalSciences(){
                             </li>
                         </ol>
                 </TimeLineTile>
-                <TimeLineTile date="VT 2020">
+                <TimeLineTile date="SPRING TERM 2020">
                         <ol>
                             <li>Multivariable Analysis - MMG300</li>
                             <li>Programming with Matlab - MVG300</li>

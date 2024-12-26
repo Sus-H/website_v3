@@ -9,12 +9,14 @@ export function AcademicBg() {
   return (
     <div>
         <div className="bg-[url('/images/academic-bg-1.png')] 2xl:bg-cover bg-contain bg-no-repeat">
-                <div className="p-10">
+            <div className="py-20">
+                <div className="px-20">
                     <AcademicInteractionDesign></AcademicInteractionDesign>
                 </div>
-                <div className="p-10">
+                <div className="px-20">
                     <AcademicIndustrialDesign></AcademicIndustrialDesign>
                 </div>
+            </div>
         </div>
         <div>
             <div className="p-10">

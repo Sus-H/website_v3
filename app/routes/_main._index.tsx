@@ -11,7 +11,9 @@ export default function Index() {
         <Introduction></Introduction>
         <SideScrollingBanner></SideScrollingBanner>
         <div className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover bg-center w-screen">
-          <Head2>Portfolio</Head2>
+          <div className="py-20">
+            <Head2>Portfolio</Head2>
+          </div>
           <Portfolio></Portfolio>
         </div>
         <div className="py-20">
