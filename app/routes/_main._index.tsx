@@ -10,8 +10,8 @@ export default function Index() {
       <div className="grid justify-centerz-10">
         <Introduction></Introduction>
         <SideScrollingBanner></SideScrollingBanner>
-        <div className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover bg-center w-screen">
-          <div className="py-20">
+        <div className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover bg-center w-screen py-20">
+          <div className="pb-20">
             <Head2>Portfolio</Head2>
           </div>
           <Portfolio></Portfolio>
