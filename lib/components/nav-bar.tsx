@@ -1,5 +1,6 @@
 import { NavButton } from "./nav-button";
 import { NavScrollButton } from "./nav-scroll-button";
+import { Portfolio } from "./portfolio";
 
 export function NavBar() {
   return <div>
@@ -9,9 +10,9 @@ export function NavBar() {
           <NavButton to="/"><img src="/images/kirbypixelstar_trans2.png" alt="" className="w-7 inline"/></NavButton>
           <NavButton to="/">Home</NavButton>
           </div>
-          <NavScrollButton to="/" target="">Portfolio</NavScrollButton>
-          <NavScrollButton to="/" target="">Academic Journey</NavScrollButton>
-          <NavScrollButton to="/" target="">Gallery</NavScrollButton>
+          <NavScrollButton targetId="portfolio" label="Portfolio" />
+          <NavScrollButton targetId="academic-journey" label="Academic Journey" />
+          <NavScrollButton targetId="gallery" label="Gallery" />
       </div>
     </div>
   </div>      

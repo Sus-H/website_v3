@@ -10,10 +10,12 @@ export function AcademicIndustrialDesign() {
                         <p>TKDES</p>
                         <p>(Teknisk Design)</p>
                     </div>
+                    <p className="text-2xl">
+                        2020 - 2023
+                    </p>
             </div>
             <div className="grid sm:grid-cols-3">
                 <div>
-                
                     YEAR 1
                     <ol className="relative border-s border-black dark:black">
                         <TimeLineTile date="FALL TERM 2020">

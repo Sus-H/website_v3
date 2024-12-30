@@ -10,6 +10,9 @@ export function AcademicInteractionDesign() {
                         <p>Interaction Design and Technologies</p>
                         <p>MPIDE</p>
                     </p>
+                    <p className="text-2xl">
+                        2023 - 2025
+                    </p>
                 </div>
 
                 <div className="grid sm:grid-cols-3">

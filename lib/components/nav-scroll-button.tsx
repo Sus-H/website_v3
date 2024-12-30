@@ -1,22 +1,17 @@
-import React from "react";
-import { Link as ScrollLink } from "react-scroll";
+import React from 'react';
 
-interface Props {
-  to: string;
-  target?: string;
-  children?: React.ReactNode;
+interface NavScrollButtonProps {
+  targetId: string;
+  label: string;
 }
 
-export function NavScrollButton({ to, target, children }: Props) {
+export function NavScrollButton({ targetId, label }: NavScrollButtonProps) {
   return (
-    <ScrollLink
+    <button
+      onClick={() => document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })}
       className="text no-underline hover:underline"
-      to={to}
-      smooth={true}
-      duration={500}
-      target={target}
     >
-      {children}
-    </ScrollLink>
+      {label}
+    </button>
   );
 }

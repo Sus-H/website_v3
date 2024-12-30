@@ -2,7 +2,16 @@ import TimeLineTile from "./time-line.tile"
 
 export function AcademicMathematicalSciences(){
     return <div>
-        <div className="bg-white grid sm:flex justify-center border-4 border-indigo-800 rounded-lg p-20">
+        <div className="bg-white grid sm:flex justify-start border-4 border-indigo-800 rounded-lg p-20">
+            <div className="grid gap-5 mb-10 sm:w-1/2">
+                <img src="/images/logo_GU.png" alt="Gothenburg University Logo" className="h-20"/>
+                <div>
+                    <p>Mathematical Sciences</p>
+                    <p>(Matematiska Vetenskaper)</p>
+                    <p>MV</p>
+                </div>
+                <img src="/images/logo-gu-chalmers.png" alt="Gothenburg and Chalmers Logo" className="h-20"/>
+            </div>
             <ol className="relative border-s border-black dark:black">
                 <TimeLineTile date="FALL TERM 2019">
                         <ol>
@@ -21,17 +30,7 @@ export function AcademicMathematicalSciences(){
                         </ol>
                 </TimeLineTile>
             </ol>
-            <div>
-                <img src="/images/logo_GU.png" alt="Gothenburg University Logo" className="h-44"/>
-            </div>
-            <div>
-                Mathematical Sciences
-                (Matematiska Vetenskaper)
-                MV
-            </div>
-            <div>
-                <img src="/images/logo-gu-chalmers.png" alt="Gothenburg and Chalmers Logo" className="h-20"/>
-            </div>
+
         </div>
     </div>
 }

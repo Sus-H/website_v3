@@ -3,6 +3,7 @@ import { SideScrollingBanner } from "lib/components/side-scrolling-banner";
 import { Introduction } from "lib/components/introduction";
 import { AcademicBg } from "lib/components/academic-bg";
 import { Portfolio } from "lib/components/portfolio";
+import { ScrollToTopButton } from "lib/components/scroll-to-top-button";
 
 export default function Index() {
   return (
@@ -10,22 +11,23 @@ export default function Index() {
       <div className="grid justify-centerz-10">
         <Introduction></Introduction>
         <SideScrollingBanner></SideScrollingBanner>
-        <div className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover bg-center w-screen py-20">
+        <div id="portfolio" className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover bg-center w-screen py-20">
           <div className="pb-20">
             <Head2>Portfolio</Head2>
           </div>
           <Portfolio></Portfolio>
         </div>
-        <div className="py-20">
+        <div id="academic-journey" className="py-20">
           <Head2>Academic Journey</Head2>
           <div className="p-20 bg-[url('/images/bg-vector-1.png')] 2xl:bg-cover bg-contain">
             <AcademicBg></AcademicBg>
           </div>
         </div>
-        <div>
+        <div id="gallery">
           <Head2>Gallery</Head2>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }
