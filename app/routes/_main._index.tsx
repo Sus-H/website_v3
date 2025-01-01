@@ -23,7 +23,7 @@ export default function Index() {
             <AcademicBg></AcademicBg>
           </div>
         </div>
-        <div id="gallery">
+        <div id="gallery" className="py-20">
           <Head2>Gallery</Head2>
         </div>
       </div>

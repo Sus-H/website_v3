@@ -38,11 +38,11 @@ export function AcademicBg() {
 
             </div>
             <div className="grid sm:grid-cols-2 gap-20">
-            <FoundationalYear></FoundationalYear>
-            <AcademicMathematicalSciences></AcademicMathematicalSciences>
+                <FoundationalYear></FoundationalYear>
+                <AcademicMathematicalSciences></AcademicMathematicalSciences>
             </div>
-            <div className="">
-            <HighSchool></HighSchool>
+            <div className="hidden">
+                <HighSchool></HighSchool>
             </div>
         </div>
     </div>
