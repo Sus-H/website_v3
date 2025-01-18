@@ -26,9 +26,9 @@ export function AcademicIndustrialDesign() {
                         </TimeLineTile>
                         <TimeLineTile date="SPRING TERM 2021">
                                 <ol className="grid gap-2">
+                                    <li>Basic Form Design - MPP121</li>
                                     <li>Computer aided modeling - MPP067</li>
                                     <li>Mathematical Statistics - MVE635</li>
-                                    <li>Basic Form Design - MPP121</li>
                                     <li>General Music Theory - 5MU047 {"(Uppsala University, Remote)"}</li>
                                 </ol>
                         </TimeLineTile>
@@ -62,23 +62,23 @@ export function AcademicIndustrialDesign() {
                     <ol className="relative border-s border-black dark:black">
                         <TimeLineTile date="FALL TERM 2022">
                             <ol className="grid gap-2">
-                                <li>Usability Engineering - IMS050</li>
                                 <li>Manufacturing Engineering - MTT031</li>
                                 <li>Machine Elements - MMF294</li>
+                                <li>Usability Engineering - IMS050</li>
                                 <li>Sustainable Development - PPU065</li>
                             </ol>
                         </TimeLineTile>
                         <TimeLineTile date="SPRING TERM 2023">
                             <ol className="grid gap-2">
-                                <li>Bachelor's Thesis in Industrial and Materials Science - IMSX16</li>
-                                <li>Introduction to Artificial Intelligence - MMS131</li>
                                 <li>Applied Object Oriented Programming - EEN060</li>
+                                <li>Introduction to Artificial Intelligence - MMS131</li>
+                                <li>Bachelor's Thesis in Industrial and Materials Science - IMSX16</li>
                                 <h3 className="font-semibold">BSc INDUSTRIAL DESIGN ENGINEERING</h3>
 
                             </ol>
                         </TimeLineTile>
                         <TimeLineTile date="SUMMER 2023">
-                            Summer Course in Music Note Writing - MUHG47 {"(Lund University, Remote)"}
+                            Summer Course in Music Writing - MUHG47 {"(Lund University, Remote)"}
                         </TimeLineTile>
                     </ol>
                 </div>

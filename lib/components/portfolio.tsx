@@ -15,9 +15,9 @@ export function Portfolio() {
 
             <div className="grid lg:grid-cols-2 gap-10">
                 <img src="/images/project_images/infoviz-1.png" alt="Chrooms" />
-                <div className="grid gap-2">
+                <div className="">
                     <p className="text-2xl mb-5">Chrooms</p>
-                    <p>
+                    <p className="mb-2">
                         Chalmers Rooms (Chrooms) is a booking system designed for students and teachers at Chalmers University. The system emphasizes quick and easy room booking with features like 
                         live-updating filters, a visual summary of recent bookings, and options for saving filter presets.
                     </p>

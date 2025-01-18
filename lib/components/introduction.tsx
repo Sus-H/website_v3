@@ -10,7 +10,7 @@ interface Head2Props {
 
 export function Introduction({ children }: Head2Props) {
   return <div>
-        <div className="lg:grid grid-cols-2 justify-center lg:gap-20 p-5 sm:p-10 lg:p-20">
+        <div className="grid lg:grid-cols-2 justify-center lg:gap-20 px-5 sm:px-10 lg:px-20">
             <div className="space-y-10 pb-20">
                 <p className="font-bold text-6xl">Susanne On Huang</p>
                 <p>Hello! My name's Susanne and I'm an energetic, outgoing and curious  student! I'm open minded and try to create mutual understanding in my  
@@ -37,7 +37,7 @@ export function Introduction({ children }: Head2Props) {
                     </p>
                 </div>
             </div>
-            <div className="size-full">
+            <div className="size-1/2">
                 <div className="rounded-full overflow-hidden">
                     <img src="/images/profile-pic-1.jpg" alt="Profile" className="object-cover"/>
                 </div>
