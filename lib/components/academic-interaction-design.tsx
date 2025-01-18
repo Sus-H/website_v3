@@ -2,7 +2,7 @@ import TimeLineTile from "./time-line.tile";
 
 export function AcademicInteractionDesign() {
     return <div>
-                <div className="flex place-content-start gap-5 mb-10">                        
+                <div className="lg:flex place-content-start gap-5 mb-10">                        
                     <div>
                         <img src="/images/it-logga.svg" alt="" className="h-20" />
                     </div>
@@ -15,12 +15,12 @@ export function AcademicInteractionDesign() {
                     </p>
                 </div>
 
-                <div className="grid sm:grid-cols-3">
+                <div className="grid lg:grid-cols-2">
                     <div>
                         YEAR 4
                         <ol className="relative border-s border-black dark:black">
                             <TimeLineTile date="FALL TERM 2023">
-                                <ol>
+                                <ol className="grid gap-2">
                                     <li>Graphical Interfaces - DAT595</li>
                                     <li>Cognitive Ergonomics - MPP036</li>
                                     <li>Prototyping in Interaction Design - CIU176</li>
@@ -28,7 +28,7 @@ export function AcademicInteractionDesign() {
                                 </ol>
                             </TimeLineTile>
                             <TimeLineTile date="SPRING TERM 2024">
-                                <ol>
+                                <ol className="grid gap-2">
                                     <li>Wireless Networks - SSY145</li>
                                     <li>Open Project in Interaction Design - CIU235</li>
                                     <li>Information Visualization - CIU187</li>
@@ -41,20 +41,21 @@ export function AcademicInteractionDesign() {
                         YEAR 5
                         <ol className="relative border-s border-black dark:black">
                             <TimeLineTile date="FALL TERM 2024">
-                                <ol>
+                                <ol className="grid gap-2">
                                     <li>Functional Programming - TDA452</li>
                                     <li>Data Science in Product Realization - IMS065</li>
                                     <li>Mobile Computing: Design and Implementation - CLS055</li>
                                     <li>Interaction Design Project - CIU265</li>
                                 </ol>
                             </TimeLineTile>
-                            <TimeLineTile date="SPRING TERM 2025" title="MSc INTERACTION DESIGN AND TECHNOLOGIES, CHALMERS UNIVERSITY OF TECHNOLOGY">
+                            <TimeLineTile date="SPRING TERM 2025">
                                 <ol>
                                     <li>Master's Thesis in Interaction Design and Technology</li>
+                                    <h3 className="font-semibold">MSc INTERACTION DESIGN AND TECHNOLOGIES</h3>
                                 </ol>
                             </TimeLineTile>
                         </ol>
                     </div>
-                </div>
+                </div>  
     </div>
 }

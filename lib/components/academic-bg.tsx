@@ -26,18 +26,18 @@ export function AcademicBg() {
                     className="max-w-full max-h-full object-contain opacity-10"
                     />
                 </div>
-                <div className=" py-20 z-10">
-                    <div className="px-20">
+                <div className="p-10 lg:p-20 z-10">
+                    <div>
                         <AcademicInteractionDesign></AcademicInteractionDesign>
                     </div>
                     <hr className="flex justify-start w- m-10"/>
-                    <div className="px-20">
+                    <div>
                         <AcademicIndustrialDesign></AcademicIndustrialDesign>
                     </div>
                 </div>
 
             </div>
-            <div className="grid sm:grid-cols-2 gap-20">
+            <div className="grid lg:grid-cols-2 gap-20">
                 <FoundationalYear></FoundationalYear>
                 <AcademicMathematicalSciences></AcademicMathematicalSciences>
             </div>

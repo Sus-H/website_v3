@@ -10,12 +10,12 @@ interface Head2Props {
 
 export function Introduction({ children }: Head2Props) {
   return <div>
-        <div className="flex grid-cols-2 justify-center gap-20 pb-20">
-            <div className="w-2/5 space-y-10">
+        <div className="lg:grid grid-cols-2 justify-center lg:gap-20 p-5 sm:p-10 lg:p-20">
+            <div className="space-y-10 pb-20">
                 <p className="font-bold text-6xl">Susanne On Huang</p>
                 <p>Hello! My name's Susanne and I'm an energetic, outgoing and curious  student! I'm open minded and try to create mutual understanding in my  
                     professional work. I value well-being and aim to make everyday life as  smooth as possible for the people around me.</p>
-                <div className="grid grid-rows-1 grid-cols-3">
+                <div className="grid sm:grid-rows-1 sm:grid-cols-3">
                     <p className="no-underline hover:underline">
                         <a href="https://www.linkedin.com/in/susanne-on-huang-30057118a"  target="_blank" referrerPolicy="no-referrer">
                         <FaLinkedin className="inline size-5 mr-3"/> 
@@ -37,8 +37,10 @@ export function Introduction({ children }: Head2Props) {
                     </p>
                 </div>
             </div>
-            <div className="w-48 rounded-full overflow-hidden col-span-1">
-                <img src="/images/profile-pic-1.jpg" alt="Profile" className="w-full h-full object-cover" />
+            <div className="size-full">
+                <div className="rounded-full overflow-hidden">
+                    <img src="/images/profile-pic-1.jpg" alt="Profile" className="object-cover"/>
+                </div>
             </div>
         </div>
     </div>;

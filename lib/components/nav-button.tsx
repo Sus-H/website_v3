@@ -8,5 +8,5 @@ interface Props{
 }
 
 export function NavButton({to,target, children}:Props){
-    return <Link className="text no-underline hover:underline" to={to} target={target}>{children}</Link>
+    return <Link className="no-underline hover:underline" to={to} target={target}>{children}</Link>
 }

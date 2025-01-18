@@ -1,7 +1,7 @@
 export function Portfolio() {
     return <div>
         <div className="grid gap-10">
-            <div className="grid grid-cols-2 px-20 gap-10">
+            <div className="grid lg:grid-cols-2 gap-10">
                 <img src="/images/project_images/kandidat-arbete-1.png" alt="CoPoint" className="" />
                 <div>
                     <p className="text-2xl mb-5">CoPoint</p>
@@ -13,7 +13,7 @@ export function Portfolio() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 px-20 gap-10">
+            <div className="grid lg:grid-cols-2 gap-10">
                 <img src="/images/project_images/infoviz-1.png" alt="Chrooms" />
                 <div className="grid gap-2">
                     <p className="text-2xl mb-5">Chrooms</p>

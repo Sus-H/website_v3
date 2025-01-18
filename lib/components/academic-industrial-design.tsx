@@ -3,7 +3,7 @@ import TimeLineTile from "./time-line.tile";
 export function AcademicIndustrialDesign() {
     return (
         <div>
-            <div className="flex place-content-start gap-5 mb-10">
+            <div className="lg:flex place-content-start gap-5 mb-10">
                     <img src="/images/td-logga.png" alt="" className="h-28"/>
                     <div className="text-2xl">
                         <p>Industrial Design Engineering</p>
@@ -14,18 +14,18 @@ export function AcademicIndustrialDesign() {
                         2020 - 2023
                     </p>
             </div>
-            <div className="grid sm:grid-cols-3">
+            <div className="grid lg:grid-cols-3">
                 <div>
                     YEAR 1
                     <ol className="relative border-s border-black dark:black">
                         <TimeLineTile date="FALL TERM 2020">
-                                <ol>
+                                <ol className="grid gap-2">
                                     <li>Sketching and Modeling techniques - MPP057</li>
                                     <li>Engineering methodology - MPP083</li>
                                 </ol>
                         </TimeLineTile>
                         <TimeLineTile date="SPRING TERM 2021">
-                                <ol>
+                                <ol className="grid gap-2">
                                     <li>Computer aided modeling - MPP067</li>
                                     <li>Mathematical Statistics - MVE635</li>
                                     <li>Basic Form Design - MPP121</li>
@@ -39,7 +39,7 @@ export function AcademicIndustrialDesign() {
                     YEAR 2
                     <ol className="relative border-s border-black dark:black">
                         <TimeLineTile date="FALL TERM 2021">
-                                <ol>
+                                <ol className="grid gap-2">
                                     <li>Sketching and Presentation Techniques - PPU221</li>
                                     <li>Mechanics - TME010</li>
                                     <li>Product requirements engineering - MMT016</li>
@@ -48,7 +48,7 @@ export function AcademicIndustrialDesign() {
                                 </ol>
                         </TimeLineTile>
                         <TimeLineTile date="SPRING TERM 2022">
-                            <ol>
+                            <ol className="grid gap-2">
                                 <li>Materials Science and Engineering - MTT011</li>
                                 <li>Applied Mechatronics - SSY300</li>
                                 <li>User Oriented Design - MMF274</li>
@@ -61,18 +61,20 @@ export function AcademicIndustrialDesign() {
                     YEAR 3
                     <ol className="relative border-s border-black dark:black">
                         <TimeLineTile date="FALL TERM 2022">
-                            <ol>
+                            <ol className="grid gap-2">
                                 <li>Usability Engineering - IMS050</li>
                                 <li>Manufacturing Engineering - MTT031</li>
                                 <li>Machine Elements - MMF294</li>
                                 <li>Sustainable Development - PPU065</li>
                             </ol>
                         </TimeLineTile>
-                        <TimeLineTile date="SPRING TERM 2023" title="BSc INDUSTRIAL DESIGN ENGINEERING, CHALMERS UNIVERSITY OF TECHNOLOGY">
-                            <ol>
+                        <TimeLineTile date="SPRING TERM 2023">
+                            <ol className="grid gap-2">
                                 <li>Bachelor's Thesis in Industrial and Materials Science - IMSX16</li>
                                 <li>Introduction to Artificial Intelligence - MMS131</li>
                                 <li>Applied Object Oriented Programming - EEN060</li>
+                                <h3 className="font-semibold">BSc INDUSTRIAL DESIGN ENGINEERING</h3>
+
                             </ol>
                         </TimeLineTile>
                         <TimeLineTile date="SUMMER 2023">
