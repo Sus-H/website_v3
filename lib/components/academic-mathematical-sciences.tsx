@@ -2,7 +2,7 @@ import TimeLineTile from "./time-line.tile"
 
 export function AcademicMathematicalSciences(){
     return <div>
-        <div className="bg-white grid justify-start border-4 border-indigo-800 rounded-lg p-20">
+        <div className="bg-white grid justify-start border-4 border-indigo-800 rounded-lg p-10 xl:p-20">
             <div className="grid lg:flex gap-5 w-full mb-10">
                 <img src="/images/logo_GU.png" alt="Gothenburg University Logo" className="h-20"/>
                 <div>

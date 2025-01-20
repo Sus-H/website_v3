@@ -3,6 +3,7 @@ import { SideScrollingBanner } from "lib/components/side-scrolling-banner";
 import { Introduction } from "lib/components/introduction";
 import { AcademicBg } from "lib/components/academic-bg";
 import { Portfolio } from "lib/components/portfolio";
+import { Gallery } from "lib/components/gallery";
 import { ScrollToTopButton } from "lib/components/scroll-to-top-button";
 
 export default function Index() {
@@ -27,6 +28,9 @@ export default function Index() {
         </div>
         <div id="gallery" className="py-20">
           <Head2>Gallery</Head2>
+          <div>
+            <Gallery></Gallery>
+          </div>
         </div>
       </div>
       <ScrollToTopButton />
