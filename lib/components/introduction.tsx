@@ -39,7 +39,9 @@ export function Introduction({ children }: Head2Props) {
             </div>
             <div className="size-1/2">
                 <div className="rounded-full overflow-hidden">
-                    <img src="/images/profile-pic-1.jpg" alt="Profile" className="object-cover"/>
+                    <a href="https://albinkarlsson.se/" target="_blank" referrerPolicy="no-referrer">
+                        <img src="/images/profile-pic-1.jpg" alt="Profile" className="object-cover"/>
+                    </a>
                 </div>
             </div>
         </div>
