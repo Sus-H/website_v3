@@ -9,16 +9,16 @@ import { ScrollToTopButton } from "lib/components/scroll-to-top-button";
 export default function Index() {
   return (
     <div>
-      <div className="grid justify-center z-10">
+      <div className="grid justify-center z-10 gap-20">
         <Introduction></Introduction>
         <SideScrollingBanner></SideScrollingBanner>
-        <div id="portfolio" className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover w-screen py-20">
+        <div id="portfolio" className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover w-screen">
           <Head2>Portfolio</Head2>
           <div className="p-5 sm:p-10 lg:p-20">
             <Portfolio></Portfolio>
           </div>
         </div>
-        <div id="academic-journey" className="py-20">
+        <div id="academic-journey">
           <div className="flex justify-center">
             <Head2>Academic Journey</Head2>
           </div>
@@ -26,11 +26,12 @@ export default function Index() {
             <AcademicBg></AcademicBg>
           </div>
         </div>
-        <div id="gallery" className="py-20">
+        <div id="gallery">
           <Head2>Gallery</Head2>
-          <div>
+          <div className="flex justify-center pt-10">Coming soon...</div>
+          {/* <div>
             <Gallery></Gallery>
-          </div>
+          </div> */}
         </div>
       </div>
       <ScrollToTopButton />
