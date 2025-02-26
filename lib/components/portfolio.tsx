@@ -10,7 +10,9 @@ export function Portfolio() {
                         It addresses the need for seamless communication, easy file management, personalized interactions, and task tracking—putting 
                         business owners at the center. Unlike existing tools focused primarily on firms, CoPoint bridges the gap by catering to the needs of both parties.
                     </p>
-                    <a href="http://hdl.handle.net/20.500.12380/307302" target="_blank" referrerPolicy="no-referrer" className="hover:underline text-blue-800 font-bold flex justify-end"> Link to paper (Swedish)</a>
+                    <p className="grid place-content-end">
+                        <a href="http://hdl.handle.net/20.500.12380/307302" target="_blank" rel="noreferrer" className="hover:underline text-blue-800 font-bold"> Link to paper (Swedish)</a>
+                    </p>
                 </div>
             </div>
 
@@ -25,7 +27,7 @@ export function Portfolio() {
                     <p>
                         For teachers, 
                         Chrooms supports batch booking for multiple rooms and courses, while students can make simple bookings efficiently. 
-                        The system ensures a seamless experience with clear navigation, instant feedback, and design consistency aligned with Chalmers' 
+                        The system ensures a seamless experience with clear navigation, instant feedback, and design consistency aligned with Chalmers 
                         website. With tools like a hoverable map and editable bookings, Chrooms streamlines the booking process for its users.
                     </p>
                 </div>
