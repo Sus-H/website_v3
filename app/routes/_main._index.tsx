@@ -28,10 +28,9 @@ export default function Index() {
         </div>
         <div id="gallery">
           <Head2>Gallery</Head2>
-          <div className="flex justify-center pt-10">Coming soon...</div>
-          {/* <div>
+          <div>
             <Gallery></Gallery>
-          </div> */}
+          </div>
         </div>
       </div>
       <ScrollToTopButton />

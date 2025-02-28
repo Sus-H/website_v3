@@ -21,7 +21,7 @@ export default function Main() {
       <Outlet></Outlet>
 
       <footer>
-        <p className="text-center text-xs mt-5"> © Susanne On Huang {":)"} 2024</p>
+        <p className="text-center text-xs mt-5"> © Susanne On Huang {":)"} 2025</p>
       </footer>
     </div>
   );
