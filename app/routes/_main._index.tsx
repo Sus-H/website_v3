@@ -2,6 +2,7 @@ import { Head2 } from "lib/components/header-2";
 import { SideScrollingBanner } from "lib/components/side-scrolling-banner";
 import { Introduction } from "lib/components/introduction";
 import { AcademicBg } from "lib/components/academic-bg";
+import { CurriculumVitae } from "lib/components/curriculum-vitae";
 import { Portfolio } from "lib/components/portfolio";
 import { Gallery } from "lib/components/gallery";
 import { ScrollToTopButton } from "lib/components/scroll-to-top-button";
@@ -9,13 +10,22 @@ import { ScrollToTopButton } from "lib/components/scroll-to-top-button";
 export default function Index() {
   return (
     <div>
-      <div className="grid justify-center z-10 gap-20">
+      <div className="grid justify-center z-10 gap-">
         <Introduction></Introduction>
         <SideScrollingBanner></SideScrollingBanner>
-        <div id="portfolio" className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover w-screen">
+        <div
+          id="portfolio"
+          className="bg-[url('/images/pink-clouds-bg-15.png')] bg-cover w-screen"
+        >
           <Head2>Portfolio</Head2>
           <div className="p-5 sm:p-10 lg:p-20">
             <Portfolio></Portfolio>
+          </div>
+        </div>
+        <div id="curriculum-vitae">
+          <Head2>Experience and Activities</Head2>
+          <div className="p-5 sm:p-10 lg:p-20">
+            <CurriculumVitae></CurriculumVitae>
           </div>
         </div>
         <div id="academic-journey">
