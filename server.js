@@ -9,14 +9,23 @@ import { fileURLToPath } from "node:url";
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const mode = process.env.NODE_ENV;
 
-// Read the build manifest
+// Read the build assets
 const buildPath = join(__dirname, "build/client");
-const buildManifest = JSON.parse(
-  readFileSync(join(buildPath, "manifest.json"), "utf-8")
-);
+const assetsPath = join(buildPath, "assets");
+
+// Create a simple build object that Remix can use
+const build = {
+  assets: assetsPath,
+  entry: {
+    module: join(buildPath, "index.html"),
+    imports: [],
+  },
+  routes: {},
+  publicPath: "/build/",
+};
 
 const requestHandler = createRequestHandler({
-  build: buildManifest,
+  build,
   mode,
 });
 
