@@ -2,12 +2,21 @@ import { createRequestHandler } from "@remix-run/node";
 import { createServer } from "node:http";
 import { createServer as createUnixServer } from "node:net";
 import { parse } from "node:url";
-import * as build from "./build/index.js";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const mode = process.env.NODE_ENV;
 
+// Read the build manifest
+const buildPath = join(__dirname, "build/client");
+const buildManifest = JSON.parse(
+  readFileSync(join(buildPath, "manifest.json"), "utf-8")
+);
+
 const requestHandler = createRequestHandler({
-  build,
+  build: buildManifest,
   mode,
 });
 
