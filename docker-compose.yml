@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    container_name: website_v3
+    restart: unless-stopped
+    volumes:
+      # Mount a named volume to the /tmp directory in the container.
+      # This allows other containers (like a reverse proxy) to access the Unix socket.
+      - app_socket:/tmp
+    # If you want to access the app directly via its TCP port (e.g., for debugging),
+    # you can uncomment the following lines.
+    # ports:
+    #   - "4000:4000"
+
+# Define the named volume for the socket. This is managed by Docker.
+volumes:
+  app_socket: 
