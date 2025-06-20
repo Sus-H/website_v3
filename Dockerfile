@@ -56,4 +56,4 @@ ENV PORT=4000
 # Start Node server in the background and socat in the foreground.
 # socat forwards the Unix socket to the Node server's TCP port.
 # 'unlink-early' helps prevent "address in use" errors on restart.
-CMD ["sh", "-c", "node server.js & socat UNIX-LISTEN:/tmp/susanne.sock,fork,reuseaddr,unlink-early TCP:localhost:4000"] 
+CMD ["sh", "-c", "node server.js & socat UNIX-LISTEN:/tmp/susanne.sock,fork,reuseaddr,unlink-early TCP:localhost:4000"]
