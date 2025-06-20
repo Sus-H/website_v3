@@ -1,26 +1,28 @@
-import { createRequestHandler } from "@remix-run/node";
-import { createServer } from "node:http";
-import { parse } from "node:url";
-import type { ServerBuild } from "@remix-run/node";
-import * as build from "@remix-run/dev/server-build";
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const mode = process.env.NODE_ENV;
+// Get the directory name of the current module
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Create a request handler for your Remix app
-const requestHandler = createRequestHandler(build as unknown as ServerBuild, mode);
+const app = express();
+const port = process.env.PORT || 3000;
 
-// Create a standard HTTP server
-const httpServer = createServer(async (req, res) => {
-  const parsedUrl = parse(req.url || "", true);
-  const request = new Request(`http://localhost${parsedUrl.pathname}`, {
-    method: req.method || "GET",
-    headers: new Headers(req.headers as Record<string, string>),
-  });
-  await requestHandler(request, res as any);
+// Serve static assets from the 'public' directory first
+// This allows overriding files in the build folder, e.g., for favicons
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Serve static assets from the 'build/client' directory
+// This is where Remix places your JS and CSS bundles
+app.use(express.static(path.join(__dirname, 'build/client')));
+
+// For any request that doesn't match a static file, serve the index.html
+// This is the core of an SPA server, enabling client-side routing.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build/client', 'index.html'));
 });
 
-// Listen on the port specified by the environment variable, defaulting to 3000
-const port = process.env.PORT || 3000;
-httpServer.listen(port, () => {
-  console.log(`🚀 Server listening on http://localhost:${port}`);
+// Start the server
+app.listen(port, () => {
+  console.log(`🚀 Express server listening on http://localhost:${port}`);
 }); 

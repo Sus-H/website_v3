@@ -1,0 +1,21 @@
+{
+  "include": ["server.ts"],
+  "compilerOptions": {
+    // --- Output Settings ---
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // --- Interoperability & Best Practices ---
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+
+    // --- Project-specific Settings (to match your environment) ---
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"]
+  }
+} 
